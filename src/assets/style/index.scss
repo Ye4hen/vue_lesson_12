@@ -1,0 +1,218 @@
+*,
+*::before,
+*::after{
+padding: 0;
+margin: 0;
+border: 0;
+box-sizing: inherit;
+}
+html{
+font-size:100%;
+box-sizing:border-box;
+}
+body{
+padding: 0;
+margin: 0;
+line-height: 1;
+font-size: 1rem;
+color:#000;
+background:#fff;
+}
+a,
+a:visited,
+a:active{
+text-decoration: none;
+}
+// ul,
+// ol,
+// li{
+// list-style: none;
+// }
+img{
+vertical-align: top;
+}
+a,
+button,
+svg{
+cursor: pointer;
+}
+
+input,select{
+	border: 1px solid #000;
+}
+
+/*===========================================================================================*/
+
+.workers {
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+	}
+
+	&__info{
+		text-transform: capitalize;
+	}
+}
+
+.title {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.subtitle{
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.list {
+	display: grid;
+	justify-content: center;
+	gap: 20px;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	justify-self: end;
+	gap: 15px;
+}
+
+.action{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.button-action {
+	padding: 5px 10px;
+	border: 2px solid #4CAF50;
+	background-color: #4CAF50;
+	color: white;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+	&:hover {
+		background-color: transparent;
+		color: #4CAF50;
+	}
+}
+
+.button{
+	padding: 5px 10px;
+	background-color: #3498db;
+	color: white;
+	border-radius: 5px;
+  	transition: background-color 0.3s ease, color 0.3s ease; 
+
+	&:hover {
+		background-color: #2980b9;
+		cursor: pointer;
+	}
+}
+
+.err-mesg{
+	color: red;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+
+.editor{
+	margin-top: 150px;
+}
+
+.cand{
+
+	&__container{
+		display: flex;
+		flex-direction: column;
+		// justify-content: space-evenly;
+		align-items: center;
+		gap: 20px;
+	}
+	
+	&__body{
+		gap: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		.button{
+			margin: 0 auto;
+		}
+	}
+}
+
+.container{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.editor-item{
+	display: grid;
+	gap: 30px;
+}
+
+.filter__container{
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	label{
+		display: grid;
+		gap: 10px;
+	}
+}
+
+.asgn{
+	
+	&__body{
+		// display: flex;
+		margin: 30px 0;
+	}
+
+	&__subtitles{
+		display: flex;
+		h4{
+			width: 150px;
+		}
+	}
+
+	&__main-container{
+		display: grid;
+		justify-content: center;
+		gap: 20px;
+		button{
+			width: 50%;
+			margin: 0 auto; 
+		}
+	}
+
+	&__selectors{
+		display: flex;
+		gap: 30px;
+	}
+
+	&__selector{
+		label{
+			display: grid;
+			gap: 10px;
+		}
+	}
+}
+
+.asgn__item{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	div{
+		width: 150px;
+	}
+}
+
+.home{
+	text-align: center;
+}
